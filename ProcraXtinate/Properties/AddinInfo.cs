@@ -10,5 +10,5 @@ using Mono.Addins.Description;
 
 [assembly: AddinName("ProcraXtinate")]
 [assembly: AddinCategory("IDE extensions")]
-[assembly: AddinDescription("ProcraXtinate")]
-[assembly: AddinAuthor("alexander.smith")]
+[assembly: AddinDescription("A simple XS addin to help relieve the boredom during Xamarin builds!")]
+[assembly: AddinAuthor("Alex Smith")]

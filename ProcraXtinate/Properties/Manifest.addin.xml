@@ -1,8 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
+<Addin namespace   = "ProcraXtinate"
+       id          = "ProcraXtinate"
+       name        = "ProcraXtinate"
+       author      = "Alex Smith"
+       copyright   = "MIT/X11"
+       url         = "https://github.com/ajsmithsw/ProcraXtinate"
+       description = "A simple XS addin to help relieve the boredom during Xamarin builds!"
+       category    = "Debugging"
+       version     = "1.0">
 <ExtensionModel>
 	<Extension path = "/MonoDevelop/Ide/Commands/Edit">
 	    <Command id = "ProcraXtinate.ProcraXtinateCommands.BuildAndWait"
-	         _label = "Run this bitch"
+	         _label = "Build this bitch"
 	         defaultHandler = "ProcraXtinate.BuildHandler" />
     </Extension>
     <Extension path = "/MonoDevelop/Ide/MainMenu/Edit">
