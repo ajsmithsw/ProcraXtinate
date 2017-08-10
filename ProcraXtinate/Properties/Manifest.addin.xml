@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionModel>
+	<Extension path = "/MonoDevelop/Ide/Commands/Edit">
+	    <Command id = "ProcraXtinate.ProcraXtinateCommands.BuildAndWait"
+	         _label = "Run this bitch"
+	         defaultHandler = "ProcraXtinate.BuildHandler" />
+    </Extension>
+    <Extension path = "/MonoDevelop/Ide/MainMenu/Edit">
+        <CommandItem id="ProcraXtinate.ProcraXtinateCommands.BuildAndWait" />
+    </Extension>
+</ExtensionModel>
