@@ -12,17 +12,29 @@ namespace ProcraXtinate
 		{
 			base.Run();
 
-			var websites = new string[] {"http://www.websudoku.com/", "https://news.ycombinator.com/", "https://hackernoon.com/", "https://codefights.com/"};
-			var rnd = new Random();
-			System.Diagnostics.Process.Start(websites[rnd.Next(0, 3)]);
-
-			IdeApp.ProjectOperations.Build(IdeApp.ProjectOperations.CurrentSelectedSolution);
+			System.Diagnostics.Process.Start(RandomWebsite());
+			IdeApp.ProjectOperations.Execute(IdeApp.ProjectOperations.CurrentSelectedSolution, true);
 		}
 
 		protected override void Update(CommandInfo info)
 		{
 			base.Update(info);
 			info.Enabled = true;
+		}
+
+		string RandomWebsite()
+		{
+			var websites = new string[] 
+			{
+				"http://www.websudoku.com/", 
+				"https://news.ycombinator.com/", 
+				"https://hackernoon.com/", 
+				"https://codefights.com/"
+			};
+
+			var rnd = new Random();
+
+			return websites[rnd.Next(0, websites.Length - 1)];
 		}
 	}
 }
