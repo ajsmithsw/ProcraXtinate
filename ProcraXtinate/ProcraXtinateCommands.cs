@@ -3,6 +3,7 @@ namespace ProcraXtinate
 {
 	public enum ProcraXtinateCommands
 	{
-		BuildAndWait
+		BuildAndWait,
+		EulerAndWait
 	}
 }

@@ -6,7 +6,7 @@ using MonoDevelop.Ide;
 
 namespace ProcraXtinate
 {
-	public class BuildHandler : CommandHandler
+	public class EulerHandler : CommandHandler
 	{
 		protected override void Run()
 		{
@@ -14,7 +14,7 @@ namespace ProcraXtinate
 
 
 			IdeApp.ProjectOperations.Execute(IdeApp.ProjectOperations.CurrentSelectedSolution, true);
-			System.Diagnostics.Process.Start(RandomWebsite());
+			System.Diagnostics.Process.Start(RandomEuler());
 
 		}
 
@@ -24,19 +24,11 @@ namespace ProcraXtinate
 			info.Enabled = true;
 		}
 
-		string RandomWebsite()
+		string RandomEuler()
 		{
-			var websites = new string[]
-			{
-				"http://www.websudoku.com/",
-				"https://news.ycombinator.com/",
-				"https://hackernoon.com/",
-				"https://codefights.com/"
-			};
-
 			var rnd = new Random();
 
-			return websites[rnd.Next(0, websites.Length - 1)];
+			return string.Format("{0}{1}", "https://projecteuler.net/problem=", rnd.Next(1, 598));
 		}
 	}
 }

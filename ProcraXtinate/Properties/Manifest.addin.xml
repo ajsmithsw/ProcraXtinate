@@ -11,4 +11,15 @@
         <CommandItem id="ProcraXtinate.ProcraXtinateCommands.BuildAndWait"
 					 shortcut = "Control + Alt + Shift + B" />
     </Extension>
+	<Extension path = "/MonoDevelop/Ide/Commands/Edit">
+	    <Command id = "ProcraXtinate.ProcraXtinateCommands.EulerAndWait"
+	         		_label = "Euler Run"
+					description = "Try to solve the Euler puzzle!"
+					shortcut = "Control + Alt + Shift + E"
+	         		defaultHandler = "ProcraXtinate.EulerHandler" />
+    </Extension>
+    <Extension path = "/MonoDevelop/Ide/MainMenu/Run">
+        <CommandItem id="ProcraXtinate.ProcraXtinateCommands.EulerAndWait"
+					 shortcut = "Control + Alt + Shift + E" />
+    </Extension>
 </ExtensionModel>

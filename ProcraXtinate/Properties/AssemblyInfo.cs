@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 // Change them to the values specific to your project.
 
 [assembly: AssemblyTitle("ProcraXtinate")]
-[assembly: AssemblyDescription("A simple XS addin to help relieve the boredom during Xamarin builds!")]
+[assembly: AssemblyDescription("A simple VS for Mac addin to help relieve the boredom during Xamarin builds!")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Alex Smith")]
 [assembly: AssemblyProduct("")]
